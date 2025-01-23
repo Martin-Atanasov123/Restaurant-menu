@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url(https://img.freepik.com/free-vector/engraving-rustic-restaurant-menu-with-photo_23-2148965528.jpg?t=st=1737661114~exp=1737664714~hmac=3a5dff66bf7750f59080041b4d50bbbadb4d354e061562bd04938f3de2b64cdf&w=740);
-    background-size: contain;
+    /* background-image: url(/5433966.jpg); */
+    background-size: cover;
     background-repeat: no-repeat;
 }
