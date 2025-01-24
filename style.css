@@ -9,36 +9,42 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
     width: 100%;
     background-image: url(/top-view-delicious-round-pie-with-fruits-cream-dark-desk-tea-sugar-cookie-biscuit-cake-pie-sweet.jpg);
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
 #Welcome {
-
     text-align: center;
-    margin-bottom: 5em;
+    margin: 2em;
 }
 section {
     display: flex;
     align-self: center;
     flex-direction: column;
-    width: 80%;
-    /* margin: 5em; */
-
+    width: 90%;
+    margin: 5em 0em;
     padding: 20px;
-    background-color: #ffffff94;
-    border-radius: 5px;
+    background-color: #ffffff4b;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .details {
-    margin: 10px 0;
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff94;
+    transition: all 0.3s ease;
+}
+.details[open] {
+    background-color: #ffffffd9;
+    transform: scale(1.02);
 }
 .details summary {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     cursor: pointer;
 }
 ul {
@@ -47,4 +53,9 @@ ul {
 }
 li {
     margin: 5px 0;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+li:hover {
+    color: #007BFF;
 }
