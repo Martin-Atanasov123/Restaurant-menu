@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,8 +11,14 @@ body {
     align-items: center;
     width: 100%;
     background-image: url(/top-view-delicious-round-pie-with-fruits-cream-dark-desk-tea-sugar-cookie-biscuit-cake-pie-sweet.jpg);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
 }
 
 #Welcome {
@@ -58,4 +64,51 @@ li {
 }
 li:hover {
     color: #007BFF;
+}
+.search-bar {
+    margin: 20px;
+    text-align: center;
+}
+.search-bar input {
+    padding: 10px;
+    width: 80%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.filter-options {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.filter-options button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.filter-options button:hover {
+    background-color: #0056b3;
+}
+.filter-options button.active {
+    background-color: #0056b3;
+}
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.dark-mode-toggle:hover {
+    background-color: #0056b3;
 }
