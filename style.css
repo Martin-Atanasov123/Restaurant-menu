@@ -33,3 +33,18 @@ section {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.details {
+    margin: 10px 0;
+}
+.details summary {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+ul {
+    margin: 10px 0 0 20px;
+    list-style: disc;
+}
+li {
+    margin: 5px 0;
+}
