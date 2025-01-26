@@ -80,13 +80,17 @@ li:hover {
 .filter-options {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* position: fixed; */
+    background-color: #778594;
+    top: 0;
+    z-index: 1;
+    align-items: right;
     justify-content: center;
     margin: 20px;
 }
 .filter-options button {
     padding: 10px 20px;
-    margin: 0 10px;
+    margin: 10px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -101,7 +105,7 @@ li:hover {
     background-color: #0056b3;
 }
 .dark-mode-toggle {
-    position: fixed;
+    /* position: fixed; */
     top: 20px;
     right: 20px;
     padding: 10px;
@@ -169,6 +173,7 @@ li:hover {
         display: flex;
         flex-direction: column;
         align-self: right;
+        
     }
 
     .topnav a {
