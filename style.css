@@ -52,8 +52,16 @@ section {
 }
 
 .details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-size: 1.4rem;
     cursor: pointer;
+}
+.details summary img{
+    width: 30px;
+    transition: transform 0.3s ease;
+    
 }
 
 ul {
