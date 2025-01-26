@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Menu</title>
 </head>
 
@@ -12,28 +14,38 @@
     <div id="Welcome">
         <h1>Welcome (rest name )</h1>
     </div>
-    <div class="search-bar">
+
+    <div class="topnav">
+        <!-- <a href="#home" class="active"></a> -->
+        <div id="myLinks">
+                <div class="filter-options">
+                    <button data-filter="all" onclick="filterDishes('all')">All</button>
+                    <button data-filter="vegetarian" onclick="filterDishes('vegetarian')">Vegetarian</button>
+                    <button data-filter="vegan" onclick="filterDishes('vegan')">Vegan</button>
+                    <button data-filter="gluten-free" onclick="filterDishes('gluten-free')">Gluten-Free</button>
+                </div>
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+        <div class="search-bar">
         <input type="text" id="search" placeholder="Search for dishes...">
     </div>
-    <div class="filter-options">
-        <button data-filter="all" onclick="filterDishes('all')">All</button>
-        <button data-filter="vegetarian" onclick="filterDishes('vegetarian')">Vegetarian</button>
-        <button data-filter="vegan" onclick="filterDishes('vegan')">Vegan</button>
-        <button data-filter="gluten-free" onclick="filterDishes('gluten-free')">Gluten-Free</button>
-    </div>
-    <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
     <section id="menu">
         <details class="details" open>
             <summary>Main Dishes</summary>
             <ul>
                 <li data-category="all" title="Spicy chicken curry with rice">Chicken Curry - $12.99</li>
                 <li data-category="all" title="Hearty beef stew with vegetables">Beef Stew - $14.99</li>
-                <li data-category="vegetarian" title="Mixed vegetables stir-fried with soy sauce">Vegetable Stir-fry - $10.99</li>
+                <li data-category="vegetarian" title="Mixed vegetables stir-fried with soy sauce">Vegetable Stir-fry -
+                    $10.99</li>
                 <li data-category="all" title="Grilled salmon with lemon butter sauce">Grilled Salmon - $18.99</li>
                 <li data-category="all" title="Classic spaghetti with meat sauce">Spaghetti Bolognese - $13.99</li>
             </ul>
         </details>
-    
+
         <details class="details" open>
             <summary>Pizzas</summary>
             <ul>
@@ -49,13 +61,16 @@
             <summary>Salads</summary>
             <ul>
                 <li data-category="vegetarian" title="Greek salad with feta cheese and olives">Greek Salad - $7.99</li>
-                <li data-category="vegetarian" title="Shopska salad with tomatoes and cucumbers">Shopska Salad - $6.99</li>
-                <li data-category="vegetarian" title="Luta salad with mixed greens and vinaigrette">Luta Salad - $6.99</li>
+                <li data-category="vegetarian" title="Shopska salad with tomatoes and cucumbers">Shopska Salad - $6.99
+                </li>
+                <li data-category="vegetarian" title="Luta salad with mixed greens and vinaigrette">Luta Salad - $6.99
+                </li>
                 <li data-category="all" title="Caesar salad with grilled chicken and croutons">Caesar Salad - $8.99</li>
-                <li data-category="vegetarian" title="Caprese salad with tomatoes and mozzarella">Caprese Salad - $7.99</li>
+                <li data-category="vegetarian" title="Caprese salad with tomatoes and mozzarella">Caprese Salad - $7.99
+                </li>
             </ul>
         </details>
-    
+
         <details class="details" open>
             <summary>Drinks</summary>
             <ul>
