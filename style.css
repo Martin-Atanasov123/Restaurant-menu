@@ -23,8 +23,8 @@ body.dark-mode {
 
 #Welcome {
     text-align: center;
-    margin: 2em;
-    display: none;
+    margin: 1em;
+
 }
 section {
     display: flex;
@@ -80,8 +80,6 @@ li:hover {
 .filter-options {
     display: flex;
     flex-direction: column;
-    /* position: fixed; */
-    background-color: #778594;
     top: 0;
     z-index: 1;
     align-items: right;
@@ -167,36 +165,53 @@ li:hover {
 }
 
 @media screen and (max-width: 768px) {
-    /* Display the navigation menu links vertically instead of horizontally (for small screens) */
 
-    .topnav{
-        display: flex;
-        flex-direction: column;
-        align-self: right;
-        
-    }
 
     .topnav a {
         float: none;
-        display: block;
-        text-align: left;
-        
-    }
-    #myLinks {
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Hide the navigation menu links (except for logo/home) */
-    .topnav.responsive #myLinks {
-        display: block;
-    }
-
-    /* Style the navigation menu links */
-    .topnav.responsive a {
-        float: none;
         display: flex;
         text-align: left;
+
     }
-    
+
+    .filter-options { 
+
+        top: 0;
+        z-index: 1;
+        align-items: right;
+        justify-content: center;
+        margin: 20px;
+    }
+    .filter-options button {
+        font-size: large;
+        padding: 10px 20px;
+        margin: 10px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #007BFF;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+    .filter-options button:hover {
+        background-color: #0056b3;
+    }
+    .filter-options button.active {
+        background-color: #0056b3;
+    }
+    .dark-mode-toggle {
+        /* position: fixed; */
+        top: 20px;
+        right: 20px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #007BFF;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+    .dark-mode-toggle:hover {
+        background-color: #0056b3;
+    }
 }
