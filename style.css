@@ -4,12 +4,14 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
 body {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    min-height: 100vh;
     background-image: url(/top-view-delicious-round-pie-with-fruits-cream-dark-desk-tea-sugar-cookie-biscuit-cake-pie-sweet.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -21,11 +23,8 @@ body.dark-mode {
     color: #ffffff;
 }
 
-#Welcome {
-    text-align: center;
-    margin: 1em;
 
-}
+
 section {
     display: flex;
     align-self: center;
@@ -46,37 +45,46 @@ section {
     background-color: #ffffff94;
     transition: all 0.3s ease;
 }
+
 .details[open] {
     background-color: #ffffffd9;
     transform: scale(1.02);
 }
+
 .details summary {
     font-size: 1.4rem;
     cursor: pointer;
 }
+
 ul {
     margin: 10px 0 0 20px;
     list-style: disc;
 }
+
 li {
     margin: 5px 0;
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
+
 li:hover {
     color: #007BFF;
 }
+
 .search-bar {
     margin: 20px;
     text-align: center;
 }
+
 .search-bar input {
+    margin-top: 3rem;
     padding: 10px;
-    width: 80%;
+    width: 90%;
     font-size: 1rem;
     border-radius: 5px;
     border: 1px solid #ccc;
 }
+
 .filter-options {
     display: flex;
     flex-direction: column;
@@ -86,6 +94,7 @@ li:hover {
     justify-content: center;
     margin: 20px;
 }
+
 .filter-options button {
     padding: 10px 20px;
     margin: 10px 10px;
@@ -96,12 +105,15 @@ li:hover {
     color: white;
     transition: background-color 0.3s ease;
 }
+
 .filter-options button:hover {
     background-color: #0056b3;
 }
+
 .filter-options button.active {
     background-color: #0056b3;
 }
+
 .dark-mode-toggle {
     /* position: fixed; */
     top: 20px;
@@ -114,6 +126,7 @@ li:hover {
     color: white;
     transition: background-color 0.3s ease;
 }
+
 .dark-mode-toggle:hover {
     background-color: #0056b3;
 }
@@ -145,7 +158,7 @@ li:hover {
 
 /* Style the hamburger menu */
 .topnav a.icon {
-    background: black;
+    /* background: rgb(146, 103, 103); */
     display: block;
     position: absolute;
     right: 0;
@@ -164,24 +177,44 @@ li:hover {
     color: white;
 }
 
+footer {
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
 
 
     .topnav a {
-        float: none;
         display: flex;
-        text-align: left;
-
-    }
-
-    .filter-options { 
-
-        top: 0;
-        z-index: 1;
-        align-items: right;
         justify-content: center;
-        margin: 20px;
+        text-align: right;
+        /* position: fixed; */
+        padding: 5px;
+        width: 100%;
+        background-color: #ccc;
+
     }
+
+    .topnav a i {
+
+        right: 0;
+        margin-right: 10px;
+        background-color: #ccc;
+        padding: 10px;
+        border-radius: 1em;
+    }
+
+    .filter-options {
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
     .filter-options button {
         font-size: large;
         padding: 10px 20px;
@@ -193,12 +226,15 @@ li:hover {
         color: white;
         transition: background-color 0.3s ease;
     }
+
     .filter-options button:hover {
         background-color: #0056b3;
     }
+
     .filter-options button.active {
         background-color: #0056b3;
     }
+
     .dark-mode-toggle {
         /* position: fixed; */
         top: 20px;
@@ -211,6 +247,7 @@ li:hover {
         color: white;
         transition: background-color 0.3s ease;
     }
+
     .dark-mode-toggle:hover {
         background-color: #0056b3;
     }
