@@ -99,28 +99,30 @@ li:hover {
 
 .filter-options {
     display: flex;
-    flex-direction: column;
+
     top: 0;
-    z-index: 1;
+
     align-items: right;
     justify-content: center;
-    margin: 20px;
+    margin-top: 200px;
 }
 
 .filter-options button {
     font-size: large;
     padding: 10px 20px;
     margin: 10px 10px;
+    box-shadow: 4px 4px 10px rgba(7, 7, 7, 0.836);
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #007BFF;
+    background-color: #972f2f;
     color: white;
     transition: background-color 0.3s ease;
 }
 
 .filter-options button:hover {
-    background-color: #0056b3;
+    background-color: #972f2fe8;
+
 }
 
 .filter-options button.active {
@@ -128,9 +130,7 @@ li:hover {
 }
 
 .dark-mode-toggle {
-    /* position: fixed; */
-    /* top: 20px;
-    right: 20px; */
+
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -233,6 +233,8 @@ footer {
     
     .filter-options {
         justify-content: center;
+        flex-direction: column;
+
         border-radius: 1rem;
         background-color: #313131;
         padding: 10px;
