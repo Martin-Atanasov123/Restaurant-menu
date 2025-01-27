@@ -1,6 +1,6 @@
-# 🍽️ Restaurant Menu
+### 🍽️ Restaurant Menu
 
-Welcome to the **Restaurant Menu** project! This project showcases a dynamic and interactive restaurant menu with various features like search, filters, dark mode, and more.
+Welcome to the **Restaurant Menu** project! This project showcases a dynamic and interactive restaurant menu with various features like search, filters, dark mode, and more. 
 
 ---
 
@@ -13,7 +13,7 @@ Welcome to the **Restaurant Menu** project! This project showcases a dynamic and
 
 ---
 
-## 🖼️ Screenshots
+## 📸 Screenshots
 
 ![Screenshot 1](images/screenshot1.png)
 ![Screenshot 2](images/screenshot2.png)
@@ -24,7 +24,7 @@ Welcome to the **Restaurant Menu** project! This project showcases a dynamic and
 
 Follow these instructions to get a copy of the project up and running on your local machine.
 
-### 🗋 Prerequisites
+### 📋 Prerequisites
 
 - A modern web browser
 - Basic knowledge of HTML, CSS, and JavaScript
