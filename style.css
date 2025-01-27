@@ -13,7 +13,7 @@ body {
     align-items: center;
 
     width: 100%;
-    background-image: url(/images/desktop.png);
+    background-image: url("/images/desktop.png");
     background-size:cover;
     background-repeat: no-repeat;
     background-color: #5f5f5f;
@@ -207,7 +207,7 @@ footer {
 @media screen and (max-width: 768px) {
     body {
         min-height: 100vh;
-        background-image: url(/images/mobile.png);
+        background-image: url("/images/mobile.png");
     }
 
     section{
