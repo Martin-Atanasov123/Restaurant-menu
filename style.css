@@ -16,6 +16,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     transition: background-color 0.3s ease;
+
 }
 
 body.dark-mode {
@@ -29,6 +30,8 @@ section {
     display: flex;
     align-self: center;
     flex-direction: column;
+    backdrop-filter: blur(2px);
+
     width: 90%;
     margin: 5em 0em;
     padding: 20px;
