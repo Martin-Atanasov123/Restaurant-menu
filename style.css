@@ -207,7 +207,7 @@ footer {
 @media screen and (max-width: 768px) {
     body {
         min-height: 100vh;
-        background-image: url("/images/mobile.png");
+        background-image: url("images/mobile.png");
     }
 
     section{
