@@ -1,0 +1,79 @@
+# 🍽️ Restaurant Menu
+
+Welcome to the **Restaurant Menu** project! This project showcases a dynamic and interactive restaurant menu with various features like search, filters, dark mode, and more. 
+
+## 🌟 Features
+
+- 🔍 **Search**: Quickly find your favorite dishes.
+- 🥗 **Filters**: Filter dishes by categories like Vegetarian, Vegan, and Gluten-Free.
+- 🌙 **Dark Mode**: Toggle between light and dark themes for a better viewing experience.
+- 🍕 **Smooth Transitions**: Enjoy smooth animations and transitions for a seamless user experience.
+
+## 📸 Screenshots
+
+![Screenshot 1](images/screenshot1.png)
+![Screenshot 2](images/screenshot2.png)
+
+## 🚀 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### 📋 Prerequisites
+
+- A modern web browser
+- Basic knowledge of HTML, CSS, and JavaScript
+
+### 🔧 Installation
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/restaurant-menu.git
+    ```
+
+2. **Navigate to the project directory**:
+    ```bash
+    cd restaurant-menu
+    ```
+
+3. **Open [index.html](http://_vscodecontentref_/0) in your browser**:
+    ```bash
+    start index.html
+    ```
+
+## 🛠️ Built With
+
+- **HTML**: The structure of the web page.
+- **CSS**: Styling and layout.
+- **JavaScript**: Interactivity and dynamic content.
+
+## 📂 Project Structure
+
+```plaintext
+restaurant-menu/
+├── images/
+│   ├── Pizza--Streamline-Core.png
+│   ├── Salad--Streamline-Lucide.svg
+│   └── top-view-delicious-round-pie-with-fruits-cream-dark-desk-tea-sugar-cookie-biscuit-cake-pie-sweet.jpg
+├── index.html
+├── style.css
+└── script.js
+
+🤝 Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository
+Create a new branch (git checkout -b feature-branch)
+Commit your changes (git commit -m 'Add some feature')
+Push to the branch (git push origin feature-branch)
+Create a Pull Request
+📜 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙏 Acknowledgments
+Thanks to Streamline for the icons.
+Inspired by various restaurant menu designs.
+📞 Contact
+Feel free to reach out if you have any questions or suggestions!
+
+Email: matanasov573@gmail.com
+GitHub: Martin-Atanasov123
