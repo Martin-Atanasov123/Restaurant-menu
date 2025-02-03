@@ -37,8 +37,8 @@ body.dark-mode {
 #myLinks {
     display: none;
     background-color: rgba(64, 64, 64, 0.95);
-    border: 2px solid var(--gold);
-    padding: 20px;
+    border: 1px solid black !important;
+    padding: 15px;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -56,7 +56,7 @@ body.dark-mode #myLinks {
 .filter-options button {
     padding: 12px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: var(--primary-red);
     color: var(--cream);
     cursor: pointer;
@@ -65,6 +65,7 @@ body.dark-mode #myLinks {
 
 .filter-options button:hover {
     background-color: var(--dark-red);
+    scale: 1.05;
 }
 
 .filter-options button.active {
@@ -92,11 +93,13 @@ body.dark-mode #myLinks {
 
 /* Menu Sections */
 .menu-section {
-    background-color: rgba(255, 255, 255, 0.9);
+    width: 60%;
+    justify-self: center;
     border-radius: 15px;
+    overflow: hidden;
     margin: 20px 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .menu-section[open] {
@@ -194,8 +197,20 @@ body.dark-mode #myLinks {
         background-image: url("images/mobile.png");
     }
 
+    #search{
+    display: flex;
+;
+        width: 70%;
+        justify-self: center;
+    }
+
+    .menu-section{
+        width: 90%;
+    }
     .menu-items {
         grid-template-columns: 1fr;
+
+
     }
 
     .menu-section summary {
@@ -208,7 +223,7 @@ body.dark-mode #myLinks {
     }
 
     .topnav {
-        padding: 5px;
+        padding: 23px;
     }
 }
 
