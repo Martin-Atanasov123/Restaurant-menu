@@ -1,287 +1,226 @@
-/* icons are got https://www.streamlinehq.com/ */
+:root {
+    --primary-red: #8B0000;
+    --dark-red: #5A0000;
+    --gold: #FFD700;
+    --cream: #FFFDD0;
+    --brown: #3d2b1a;
+    --light-brown: #f4e9d8;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-
-    width: 100%;
     background-image: url("images/desktop.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-color: #5f5f5f;
-    transition: background-color 0.3s ease;
-
+    background-size: cover;
+    background-color: var(--light-brown);
+    color: var(--brown);
+    transition: all 0.3s ease;
+    min-height: 100vh;
 }
 
 body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #1a120b;
+    color: var(--cream);
 }
 
-
-
-section {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    backdrop-filter: blur(2px);
-    width: 50%;
-    margin: 5em 0em;
-    padding: 20px;
-    background-color: #ffffff4b;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.details {
-    margin: 5px 0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff94;
-    transition: all 0.3s ease;
-}
-
-.details[open] {
-    background-color: #ffffffd9;
-    transform: scale(1.02);
-}
-
-.details summary {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.4rem;
-    cursor: pointer;
-}
-.details summary img{
-    width: 35px;
-    transition: transform 0.3s ease;
-    
-}
-
-ul {
-    margin: 10px 0 0 20px;
-    list-style: disc;
-}
-
-li {
-    margin: 5px 0;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
-}
-
-li:hover {
-    color: #007BFF;
-}
-
-.search-bar {
-    margin: 20px;
-    text-align: center;
-}
-
-.search-bar input {
-    margin-top: 3rem;
+.topnav {
+    position: relative;
+    background-color: var(--primary-red);
     padding: 10px;
-    width: 90%;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+}
+
+#myLinks {
+    display: none;
+    background-color: rgba(64, 64, 64, 0.95);
+    border: 2px solid var(--gold);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+body.dark-mode #myLinks {
+    background-color: rgba(26, 18, 11, 0.95);
 }
 
 .filter-options {
-    display: flex;
-
-    top: 0;
-
-    align-items: right;
-    justify-content: center;
-    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
 }
 
 .filter-options button {
-    font-size: large;
-    padding: 10px 20px;
-    margin: 10px 10px;
-    box-shadow: 4px 4px 10px rgba(7, 7, 7, 0.836);
+    padding: 12px;
     border: none;
     border-radius: 5px;
+    background-color: var(--primary-red);
+    color: var(--cream);
     cursor: pointer;
-    background-color: #972f2f;
-    color: white;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .filter-options button:hover {
-    background-color: #972f2fe8;
-
+    background-color: var(--dark-red);
 }
 
 .filter-options button.active {
-    background-color: #0056b3;
+    background-color: #27ae60;
 }
 
 .dark-mode-toggle {
-
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #007BFF;
-    color: white;
-    transition: background-color 0.3s ease;
-}
-
-.dark-mode-toggle:hover {
-    background-color: #0056b3;
-}
-
-
-
-
-
-/* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-
-    display: flex;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-    display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-    display: flex;
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    background-color: #972f2f;
+    background-color: #3498db !important;
+    margin-top: 10px;
     width: 100%;
-
 }
 
-/* Style the hamburger menu */
 .topnav a.icon {
-    /* background: rgb(146, 103, 103); */
     display: block;
     position: absolute;
-    height: 3em;
     right: 0;
     top: 0;
-
+    color: var(--cream);
+    padding: 14px 16px;
 }
 
-
-.topnav a:hover {
-    background-color: #ac4343;
+.topnav a.icon:hover {
+    background-color: var(--dark-red);
 }
 
-/* Style the active link (or home/logo) */
-.active {
-    background-color: #04AA6D;
-    color: white;
+/* Menu Sections */
+.menu-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
-footer {
-    /* position: fixed; */
-    bottom: 0;
+.menu-section[open] {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.menu-section summary {
+    padding: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--brown);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-section summary img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menu-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
     width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 22px;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--primary-red);
 }
 
-@media screen and (max-width: 768px) {
+.item-info {
+    padding: 15px;
+}
+
+.item-info h3 {
+    color: var(--primary-red);
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.item-description {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.price {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.search-bar {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+#search {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+#search:focus {
+    border-color: var(--primary-red);
+    outline: none;
+}
+
+@media (max-width: 768px) {
     body {
-        min-height: 100vh;
         background-image: url("images/mobile.png");
     }
 
-    section{
-        width: 90%;
-    }
-    .topnav a {
-        display: flex;
-        justify-content: center;
-        text-align: right;
-        padding: 5px;
-        width: 100%;
-        background-color: #972f2f;
+    .menu-items {
+        grid-template-columns: 1fr;
     }
 
-    .topnav a i {
-        margin-right: 10px;
-        background-color: #972f2f;
-
-        padding: 10px;
-        border-radius: 5px;
+    .menu-section summary {
+        font-size: 1.2rem;
+        padding: 15px;
     }
 
-    
     .filter-options {
-        justify-content: center;
-        flex-direction: column;
-
-        border-radius: 1rem;
-        background-color: #313131;
-        padding: 10px;
-        margin-top: 3rem;
+        grid-template-columns: 1fr;
     }
 
-    .filter-options button {
-        font-size: large;
-        padding: 10px 20px;
-        margin: 10px 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        background-color: #752727;
-        background-color: #ac4343;
-        
-
-
-        transition: background-color 0.5s ease;
+    .topnav {
+        padding: 5px;
     }
+}
 
-    .filter-options button:hover {
-        background-color: #0056b3;
-        background-color: #752727b9;
-    }
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    margin-top: 40px;
+}
 
-    .filter-options button.active {
-
-        background-color: #752727;
-    }
-
-    .dark-mode-toggle {
-        /* position: fixed; */
-        top: 20px;
-        right: 20px;
-        padding: 10px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        background-color: #007BFF;
-        color: white;
-        transition: background-color 0.3s ease;
-    }
-
-    .dark-mode-toggle:hover {
-        background-color: #0056b3;
-        background-color: #752727b9;
-
-    }
+footer a {
+    color: var(--primary-red);
+    text-decoration: none;
 }
